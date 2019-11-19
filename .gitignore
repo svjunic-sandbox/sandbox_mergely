@@ -1,0 +1,21 @@
+.DS_Store
+.DS_Store?
+._*
+*.swp
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.project
+.idea
+.sass-cache
+node_modules
+nginx.pid
+keys.mjs
+.sample
+config.js
+results
+reg.json
+
+# htmlの置き場所
+docs/resources

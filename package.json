@@ -1,0 +1,22 @@
+{
+  "name": "sandbox_mergely",
+  "version": "1.0.0",
+  "description": "https://github.com/wickedest/Mergely 使ってみる",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "refresh": "rm -f ./docs/css/*.css ./docs/js/*.js",
+    "init": "npm run refresh && bash init.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svjunic/sandbox_mergely/issues"
+  },
+  "homepage": "https://github.com/svjunic/sandbox_mergely#readme",
+  "devDependencies": {
+    "mergely": "^4.0.11"
+  }
+}

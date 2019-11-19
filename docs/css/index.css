@@ -1,0 +1,11 @@
+#container{
+  display: flex;
+}
+#select {
+  width: 20vw;
+  height: 100vw;
+}
+#view {
+  width: 80vw;
+  height: 100vw;
+}
