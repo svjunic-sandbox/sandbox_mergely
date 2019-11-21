@@ -38,11 +38,11 @@ window.changeSource = function(data) {
 
   console.log(data.query);
 
-  $.get(`./resources/${data.query}/dev.html`).then(function(str) {
+  $.get(`../html/${data.query}/dev.html`).then(function(str) {
     $mergely.mergely('lhs', str);
   });
 
-  $.get(`./resources/${data.query}/production.html`).then(function(str) {
+  $.get(`../html/${data.query}/production.html`).then(function(str) {
     $mergely.mergely('rhs', str);
   });
 };
