@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>test</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="stylesheet" media="all" href="./css/codemirror.css" />
+    <link rel="stylesheet" media="all" href="./css/mergely.css" />
+    <link rel="stylesheet" media="all" href="./css/view.css" />
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/codemirror.min.js"></script>
+    <script src="./js/searchcursor.min.js"></script>
+    <script src="./js/mergely.js"></script>
+
+    <script src="./js/index.js" type="module"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="menu">
+        <select class="menu-device">
+          <option value="pc">pc</option>
+          <option value="sp">sp</option>
+          <option value="mobile">mobile</option>
+        </select>
+        <select class="menu-page" size="3">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div id="view">
+        <div class="mergely-full-screen-0">
+          <div class="mergely-resizer">
+            <div id="mergely"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

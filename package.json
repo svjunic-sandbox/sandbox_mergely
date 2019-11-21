@@ -2,11 +2,12 @@
   "name": "sandbox_mergely",
   "version": "1.0.0",
   "description": "https://github.com/wickedest/Mergely 使ってみる",
-  "main": "index.js",
+  "main": "electron/main.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
+    "start": "electron .",
     "refresh": "rm -f ./docs/css/*.css ./docs/js/*.js",
     "init": "npm run refresh && bash init.sh"
   },
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/svjunic/sandbox_mergely#readme",
   "devDependencies": {
+    "electron": "^7.1.2",
+    "electron-reload": "^1.5.0",
     "mergely": "^4.0.11"
   }
 }
