@@ -7,6 +7,10 @@ function createWindow() {
   win = new BrowserWindow({
     width: 800,
     height: 600
+    // これやるとcommonjsでの読み込みとなっていろいろなプラグインが動かなくなる
+    //webPreferences: {
+    //  nodeIntegration: false
+    //}
   });
 
   // ウィンドウ最大化

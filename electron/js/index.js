@@ -14,10 +14,10 @@ $page.addEventListener('change', function(e) {
 
 window.addEventListener('load', function() {
   $view = document.querySelector('#view').contentWindow;
-  $select.options[0].selected = true;
+  $page.options[0].selected = true;
   //postMesssage($select.options[0].value);
   window.changeSource({
-    query: $select.options[0].value
+    query: $page.options[0].value
   });
 });
 
@@ -35,8 +35,6 @@ $(function() {
 
 window.changeSource = function(data) {
   if (!data.query) return;
-
-  console.log(data.query);
 
   $.get(`../html/${data.query}/dev.html`).then(function(str) {
     $mergely.mergely('lhs', str);
