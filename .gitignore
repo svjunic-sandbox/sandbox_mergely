@@ -17,5 +17,5 @@ config.js
 results
 reg.json
 
-# htmlの置き場所
-docs/resources
+list.txt
+config.sh

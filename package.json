@@ -1,14 +1,19 @@
 {
   "name": "sandbox_mergely",
   "version": "1.0.0",
-  "description": "https://github.com/wickedest/Mergely 使ってみる",
+  "description": "面倒になってgit上で差分比較でいいんじゃないかバージョン",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "refresh": "rm -f ./docs/css/*.css ./docs/js/*.js",
-    "init": "npm run refresh && bash init.sh"
+    "wget": "npm run wget-old-pc && npm run wget-old-sp && npm run wget-old-mb && npm run wget-new-pc && npm run wget-new-sp && npm run wget-new-mb",
+    "wget-old-pc": "sh wget.sh old pc",
+    "wget-old-sp": "sh wget.sh old sp",
+    "wget-old-mb": "sh wget.sh old mb",
+    "wget-new-pc": "sh wget.sh new pc",
+    "wget-new-sp": "sh wget.sh new sp",
+    "wget-new-mb": "sh wget.sh new mb"
   },
   "author": "",
   "license": "ISC",
