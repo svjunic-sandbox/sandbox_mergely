@@ -36,15 +36,24 @@ case "$id" in
     hostname=$old_mb
     ua=$uamb
     break;;
+  "new_pc" )
+    hostname=$new_pc
+    ua=$uapc
+    break;;
+  "new_sp" )
+    hostname=$new_sp
+    ua=$uasp
+    break;;
+  "new_mb" )
+    hostname=$new_mb
+    ua=$uamb
+    break;;
 esac
 
-
-echo $hostname;
-echo $ua;
-
-# while read line
-# do
-#   echo $line
-# done << FILE
-# $list
-# FILE
+while read line
+do
+  #echo "${hostname}${line}"
+  wget --user-agent="$ua" -x -P html/${id} ${hostname}${line}
+done << FILE
+$list
+FILE
