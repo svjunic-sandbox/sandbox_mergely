@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "wget": "npm run wget-old-pc && npm run wget-old-sp && npm run wget-old-mb && npm run wget-new-pc && npm run wget-new-sp && npm run wget-new-mb",
+    "wget-before": "npm run wget-old-pc && npm run wget-old-sp && npm run wget-old-mb",
+    "wget-after": "npm run wget-new-pc && npm run wget-new-sp && npm run wget-new-mb",
     "wget-old-pc": "sh wget.sh old pc",
     "wget-old-sp": "sh wget.sh old sp",
     "wget-old-mb": "sh wget.sh old mb",
